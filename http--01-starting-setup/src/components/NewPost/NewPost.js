@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+
 import './NewPost.css';
 
 class NewPost extends Component {
@@ -14,11 +15,11 @@ class NewPost extends Component {
             title: this.state.title,
             body: this.state.content,
             author: this.state.author
-        }
+        };
         axios.post('/posts', data)
-        .then(response => {
-            console.log(response)
-        })
+            .then(response => {
+                console.log(response);
+            });
     }
 
     render () {
