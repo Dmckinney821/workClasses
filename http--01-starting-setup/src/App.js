@@ -8,7 +8,8 @@ import { BrowserRouter } from 'react-router-dom';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter >
+      {/* <BrowserRouter basename='/my-app'> */}
         <div className="App">
           <Blog />
         </div>
